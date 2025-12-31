@@ -4,28 +4,28 @@ body {
 }
 
 /* HEADER */
-.header {
+.top-header {
     background: #cc0000;
-    color: white;
+    color: #fff;
     text-align: center;
     padding: 15px;
 }
 
-/* MENU */
-.menu {
+/* NAVBAR */
+.navbar {
     background: #000066;
     text-align: center;
     padding: 10px;
 }
-.menu a {
+.navbar a {
     color: white;
-    margin: 0 10px;
+    margin: 0 8px;
     text-decoration: none;
     font-weight: bold;
 }
 
-/* DESCRIPTION */
-.desc {
+/* INTRO */
+.intro {
     text-align: center;
     padding: 10px;
 }
@@ -38,6 +38,7 @@ body {
 /* CENTER */
 .center {
     text-align: center;
+    margin-bottom: 15px;
 }
 
 /* BUTTON */
@@ -45,21 +46,21 @@ body {
     background: #25d366;
     color: white;
     padding: 10px 20px;
-    border-radius: 20px;
+    border-radius: 25px;
     text-decoration: none;
 }
 
 /* TOP BOXES */
-.top-box {
+.top-boxes {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 .box {
-    color: white;
-    padding: 15px;
-    margin: 5px;
     width: 22%;
+    margin: 5px;
+    padding: 15px;
+    color: white;
     text-align: center;
     font-weight: bold;
 }
@@ -75,7 +76,7 @@ body {
 .green { background: green; }
 
 /* THREE COLUMN */
-.three {
+.three-column {
     display: flex;
     justify-content: space-around;
     margin: 20px;
@@ -90,10 +91,34 @@ body {
     text-align: center;
     padding: 10px;
 }
+.column ul {
+    padding: 10px;
+}
 .column ul li {
-    padding: 5px;
+    padding: 5px 0;
 }
 .column a {
     color: blue;
     text-decoration: none;
+}
+
+/* FOOTER */
+.footer {
+    background: #f2f2f2;
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+}
+
+/* MOBILE RESPONSIVE */
+@media (max-width: 768px) {
+    .box { width: 45%; }
+    .three-column {
+        flex-direction: column;
+        align-items: center;
+    }
+    .column {
+        width: 95%;
+        margin-bottom: 15px;
+    }
 }
