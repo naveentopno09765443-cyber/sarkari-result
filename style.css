@@ -1,61 +1,99 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background: #f2f2f2;
 }
 
-header {
-    background: #ab183d;
+/* HEADER */
+.header {
+    background: #cc0000;
     color: white;
     text-align: center;
     padding: 15px;
 }
 
-nav {
-    background: black;
-    padding: 10px;
+/* MENU */
+.menu {
+    background: #000066;
     text-align: center;
+    padding: 10px;
 }
-
-nav a {
+.menu a {
     color: white;
     margin: 0 10px;
     text-decoration: none;
     font-weight: bold;
 }
 
-.container {
+/* DESCRIPTION */
+.desc {
+    text-align: center;
+    padding: 10px;
+}
+.live {
+    border: 2px solid black;
+    padding: 2px 8px;
+    font-weight: bold;
+}
+
+/* CENTER */
+.center {
+    text-align: center;
+}
+
+/* BUTTON */
+.whatsapp {
+    background: #25d366;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+/* TOP BOXES */
+.top-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.box {
+    color: white;
+    padding: 15px;
+    margin: 5px;
+    width: 22%;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* COLORS */
+.red { background: red; }
+.orange { background: orange; }
+.pink { background: deeppink; }
+.blue { background: navy; }
+.olive { background: olive; }
+.sky { background: dodgerblue; }
+.maroon { background: maroon; }
+.green { background: green; }
+
+/* THREE COLUMN */
+.three {
     display: flex;
     justify-content: space-around;
     margin: 20px;
 }
-
-.box {
-    background: white;
+.column {
     width: 30%;
-    padding: 15px;
     border: 1px solid #ccc;
 }
-
-.box h2 {
-    background: #ab183d;
-    color: white;
-    padding: 8px;
-    margin: -15px -15px 10px -15px;
-    text-align: center;
-}
-
-footer {
-    background: black;
+.column h2 {
+    background: #990000;
     color: white;
     text-align: center;
     padding: 10px;
 }
-a {
+.column ul li {
+    padding: 5px;
+}
+.column a {
     color: blue;
     text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
 }
